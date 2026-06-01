@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell($pids = Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique; foreach \\($p in $pids\\) { Stop-Process -Id $p -Force -ErrorAction SilentlyContinue }; Write-Output \"Killed: $pids\")"
+    ]
+  }
+}
